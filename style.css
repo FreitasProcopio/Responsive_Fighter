@@ -1,0 +1,168 @@
+*{
+    margin-top:50px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.905);
+    display: flex;
+}
+
+/* tamanhos e dimenções de imagens */
+
+.logo {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+    width: 50%;
+    margin-top: -20%;
+    margin-left: 25%;
+}
+
+.deejay {
+    display: flex;
+    flex-direction: row;
+    width: 120%;
+    height: 90%;
+    margin-left: 60px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.blanka {
+    display: flex;
+    flex-direction: row;
+    width: 170%;
+    height: 96%;
+    margin-left: 80px ;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.kimberly {
+    display: flex;
+    flex-direction: row;
+    width: 150%;
+    height: 120%;
+    margin-left: 50px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+/* cards */
+
+.example {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 600px;
+    margin-top: 5%;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.example-first:hover {
+    box-shadow: 0 8px 16px 0 rgba(203, 190, 190, 0.671);
+    transition: 0.3s
+}
+
+.example-second:hover {
+    box-shadow: 0 8px 16px 0 rgba(203, 190, 190, 0.671);
+    transition: 0.3s
+}
+
+.example-third:hover {
+    box-shadow: 0 8px 16px 0 rgba(203, 190, 190, 0.671);
+    transition: 0.3s
+}
+
+.example-first {
+    width: 22%;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url("./img/deejay.png");
+    background-position: 30%;
+    background-size: 140% ;
+    background-position-x: left;
+    background-repeat: no-repeat; */
+  }
+.example-second
+{
+    width: 22%;
+    border-radius: 10px;
+    background-color: white ;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.example-third
+{
+    width: 22.5%;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Responsividade com @media */
+@media screen and (max-width: 581px) {
+
+
+    .example {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-top: 80%;
+        margin-bottom: 110%;
+    }
+
+    .logo {
+        display: flex;
+    }
+    .example-first {
+        flex-direction: column;
+        width: 50%;
+        margin-top: 60%;
+        background-color:rgb(50, 34, 34);
+    }
+    .deejay {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 140%;
+        height: 120%;
+        margin-left: 40%;
+
+    }
+    .example-second { 
+        flex-direction: column;
+        width: 50%;
+        background-color: rgb(99, 74, 74) ;
+    }
+    .blanka {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .example-third { 
+        flex-direction: column;
+        width: 50%;
+        background-color: rgb(99, 74, 74) ;
+    }
+    .kimberly {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 170%;
+        height: 140%;
+        
+    }
+}
